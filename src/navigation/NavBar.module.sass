@@ -1,0 +1,30 @@
+@use "../shared/_styles"
+@use "../shared/_mediaq"
+
+.navbar 
+    @include styles.basic-el-bg
+    width: 100%
+    height: 60px
+    z-index: 12
+    margin-bottom: 40px
+    
+.conteiner
+    display: flex
+    height: 100%
+    justify-content: space-between
+    align-items: center
+    margin: 0 20px 
+
+.logo
+    height: 40px
+    width: auto
+
+.menuIcon 
+    @include mediaq.desktop-up
+        display: none
+
+.items
+    display: none
+    @include mediaq.desktop-up
+        display: inline-block
+       

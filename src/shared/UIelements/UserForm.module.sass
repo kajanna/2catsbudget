@@ -1,0 +1,16 @@
+@use '../_mediaq'
+@use '../_styles'
+
+.form
+    @include mediaq.tablet
+        @include styles.basic-el-bg
+        padding: 60px
+        
+
+
+.title
+    text-align: center
+    font-size: 24px
+    margin-bottom: 36px
+    @include mediaq.desktop-up
+        font-size: 36px
